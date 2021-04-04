@@ -1,9 +1,10 @@
-$primaryColor:#f05454;
+$primaryColor:#222831;
 $secondaryColor:#30475e;
-$textColor:#dddddd;
+$thirdcolor:#f05454;
+$textColor:#e8e8e8;
 
 body {
-    background-color: #282c34;
+    background-color: $primaryColor;
     color: white;
 }
 
@@ -15,14 +16,22 @@ body {
 
     a {
         display: block;
-        color: $textColor;
+        font-weight: 600;
+        color: $thirdcolor;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
     }
 
     a:hover {
-        background-color: $textColor;
-        color: $secondaryColor;
+        background-color: $thirdcolor;
+        color: $primaryColor;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav {
+        padding: 0px 3em;
+        justify-content: space-evenly;
     }
 }

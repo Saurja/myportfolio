@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-export class Skills extends Component {
+export class Blog extends Component {
     render() {
         return(
             <div className="">
-                <h1>Skills</h1>
+                <h1> Comming Soon!</h1>
             </div>
         )
     }
