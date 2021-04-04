@@ -1,0 +1,28 @@
+$primaryColor:#f05454;
+$secondaryColor:#30475e;
+$textColor:#dddddd;
+
+body {
+    background-color: #282c34;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    overflow: hidden;
+
+    a {
+        display: block;
+        color: $textColor;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: $textColor;
+        color: $secondaryColor;
+    }
+}
