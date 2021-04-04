@@ -20,14 +20,14 @@ const plang = [
 const projects = [{
     name: 'Digital Wallet Web Application',
     text: 'Developed a prototype of a digital wallet is a software-based system that with the help of this application, a person can send and receive credit points to any user in the application.',
-    link: "'https://www.github.com/Saurja/digital-wallet'"
+    link: "https://assets.website-files.com/5ef5c908f55bc9b2c48a5cc2/5f50d9811e955f59eababcf7_online-wallets-in-india.jpg"
 }, {
     name: "CNN to classify 14 chest diseases from a chest X-Ray dataset",
     text: "The project is developed to classify a dataset (*Here NIH data set) into 14 different types of common chest diseases with the help of CNN, to reduce the cost and the time required to find the pulmonary diseases"
 }, {
     name: "Covid 19 Detection Web App",
     text: "The project is developed to classify covid-19, made into a Web App that can be accessed by anywhere , to reduce the cost and the time required to detect Covid-19.",
-    link: "https://github.com/Saurja/Covid-19_Disease_Diagnosis"
+    link: "https://raw.githubusercontent.com/Saurja/Covid-19_Disease_Diagnosis/main/Demo.jpg"
 }, {
     name: "Covid 19 Dashboard",
     text: "The Coronavirus dashboard provides an overview of the 2019 Novel Coronavirus COVID-19. It shows countries affected by covid from the top to bottom.",
@@ -40,11 +40,9 @@ function Lang(props) {
 
 function Project(props) {
     return (
-        <div className="all-post">
-        <div className="post" href="{props.link}">
+        <div className="post">
             <h1 class="post-title">{props.name}</h1>
             <p>{props.text}</p>
-        </div>
         </div>
     )
 }
@@ -68,7 +66,9 @@ export class About extends Component {
             </div>
             <div className="about">
                 <h1>Projects</h1>
-                    {projects.map(projects => <Project name={projects.name} text={projects.text}/>)}
+                <div className="all-post">
+                    {projects.map(projects => <Project name={projects.name} text={projects.text} link={projects.link}/>)}
+                </div>
             </div>
             </div>
         )

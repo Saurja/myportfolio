@@ -55,12 +55,17 @@ $textColor:#e8e8e8;
         }
 
         .all-post {
-
+            display: flex;
+            justify-content: space-between;
+            flex-flow: row wrap;
+            border: 1.5em;
 
             .post {
-                display: inline-block;
-                padding: 1em;
-                margin: 0.5em;
+
+                max-width: 19em;
+                padding: 1.5em;
+
+                margin: 0.2em;
                 box-shadow: inset 0 0 0 4px #000, inset -4px -4px 0 6px $secondaryColor;
                 background-color: $thirdcolor;
                 color: #000;
@@ -69,6 +74,10 @@ $textColor:#e8e8e8;
                     font-size: 1.2rem;
                     font-weight: 700;
                     line-height: 1.333;
+                }
+
+                p {
+                    font-size: 1em;
                 }
             }
         }
