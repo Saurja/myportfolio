@@ -9,9 +9,9 @@ function App() {
   return (
     <main>
       <Switch>
-        <Route path="/" component={Home} exact />
-        <Route path="/about" component={About} />
-        <Route path="/Blog" component={Blog} />
+        <Route path="/myportfolio" component={Home} exact />
+        <Route path="/myportfolio/about" component={About} />
+        <Route path="/myportfolio/Blog" component={Blog} />
         <Route component={Error} />
       </Switch>
     </main>
@@ -21,9 +21,9 @@ function App() {
 function Navbar() {
     return (
       <div className="nav">
-        <Link to="/" className="nav-items">Home</Link>
-        <Link to="/about" className="nav-items">About</Link>
-        <Link to="/Blog" className="nav-items">Blog </Link>
+        <Link to="/myportfolio" className="nav-items">Home</Link>
+        <Link to="/myportfolio/about" className="nav-items">About</Link>
+        <Link to="/myportfolio/Blog" className="nav-items">Blog </Link>
       </div>
     );
 };

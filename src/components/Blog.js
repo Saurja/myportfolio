@@ -6,7 +6,7 @@ export class Blog extends Component {
     render() {
         return(
             <div className="home">
-                <h1> Comming Soon!</h1>
+                <h1> Coming Soon!</h1>
             </div>
         )
     }
